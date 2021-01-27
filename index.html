@@ -1,0 +1,36 @@
+<html>
+
+  <head>
+    <title>The Family Book</title>
+  </head>
+
+  <body>
+    <h1>
+        The Family Book
+    </h1>
+    <img id="image" src="var image = derff.jpg">
+    <div>
+      <button type="button" onclick="nextslide()">Move</button>
+    </div>
+    <script>
+        var image = [
+  
+  "https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Ff%2Ff7%2FA_Happy_Working_Mom_Cartoon.svg%2F1200px-A_Happy_Working_Mom_Cartoon.svg.png&imgrefurl=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AA_Happy_Working_Mom_Cartoon.svg&tbnid=kkVUI0r_HdaQTM&vet=12ahUKEwixkrGqg6juAhWYFHIKHd98AYsQMygAegUIARCsAQ..i&docid=HMr7ejk1SgyViM&w=1200&h=2437&q=momcartoon&hl=en&ved=2ahUKEwixkrGqg6juAhWYFHIKHd98AYsQMygAegUIARCsAQ",
+  "https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.kindpng.com%2Fpicc%2Fm%2F14-147062_vector-bright-office-man-cartoon-papa-ki-pari.png&imgrefurl=https%3A%2F%2Fwww.kindpng.com%2Fimgv%2FiiiwoR_vector-bright-office-man-cartoon-papa-ki-pari%2F&tbnid=bf44hMpHCNmW5M&vet=12ahUKEwiLnpG9hKjuAhVYBysKHTKqAV0QMygEegUIARCzAQ..i&docid=GbvD2Amnp5Z1UM&w=860&h=1141&q=papa%20cartoon%20images&hl=en&ved=2ahUKEwiLnpG9hKjuAhVYBysKHTKqAV0QMygEegUIARCzAQ",
+  "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fd5%2F6c%2Fd2%2Fd56cd25436d0d3f56ad2f143750f7455.png&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F743516219711309710%2F&tbnid=1xN0OLf-ElQHgM&vet=12ahUKEwidvJ3dhKjuAhUCFHIKHeVFDWQQMygAegUIARDYAQ..i&docid=B-D0_J-WsHfd_M&w=336&h=511&q=grandfather%20cartoon%20images&hl=en&ved=2ahUKEwidvJ3dhKjuAhUCFHIKHeVFDWQQMygAegUIARDYAQ",
+  "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fdb%2Ff5%2F08%2Fdbf508e27715f8ed3730bec349092789.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F565694403175768013%2F&tbnid=GcuUO_yYKSFZSM&vet=12ahUKEwiTnrz0hKjuAhXUBSsKHWq4DK8QMygCegUIARDmAQ..i&docid=PdAnHd8SGcLdHM&w=602&h=1024&q=grandmom%20cartoon%20images&hl=en&ved=2ahUKEwiTnrz0hKjuAhXUBSsKHWq4DK8QMygCegUIARDmAQ",
+  "https://www.google.com/imgres?imgurl=https%3A%2F%2Fe7.pngegg.com%2Fpngimages%2F980%2F257%2Fpng-clipart-cartoon-graphy-character-curly-uncle-purple-fashion.png&imgrefurl=https%3A%2F%2Fwww.pngegg.com%2Fen%2Fpng-bojyu&tbnid=OHHUP1KPVfHqMM&vet=12ahUKEwjSzdiFhajuAhVEMnIKHQz6CsYQMygVegUIARD8AQ..i&docid=EMS-oJzz6B7biM&w=900&h=900&q=uncle%20cartoon%20images&hl=en&ved=2ahUKEwjSzdiFhajuAhVEMnIKHQz6CsYQMygVegUIARD8AQ",
+  "https://www.google.com/imgres?imgurl=https%3A%2F%2Flistimg.pinclipart.com%2Fpicdir%2Fs%2F7-74410_-soloveika-clipart-images-of.png&imgrefurl=https%3A%2F%2Fwww.pinclipart.com%2Fpins%2Faunt%2F&tbnid=0DYe3_xdpoiVPM&vet=12ahUKEwid5pKphajuAhXWcX0KHYj0ALkQMygMegUIARCwAQ..i&docid=sXruEsgIoAI2YM&w=320&h=939&q=aunt%20cartoon&hl=en&ved=2ahUKEwid5pKphajuAhXWcX0KHYj0ALkQMygMegUIARCwAQ",
+  "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F61%2F2c%2Fb7%2F612cb73d4284b091530ef6dda0993021.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F680817668640380152%2F&tbnid=GfJk-iZ0iE7SMM&vet=12ahUKEwjQkdPOhajuAhXWSysKHYSkAI0QMygBegUIARDFAQ..i&docid=LNrMdLYrXlkJ3M&w=1134&h=2400&q=brother%20cartoon%20images%20for%20kids&hl=en&ved=2ahUKEwjQkdPOhajuAhXWSysKHYSkAI0QMygBegUIARDFAQ",
+ 
+];
+var i = 0;
+function nextslide(){
+ 
+  document.getElementById("image").src= image[i];
+  i++;
+}
+    </script>
+  </body>
+
+  </html>
